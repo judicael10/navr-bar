@@ -1,0 +1,192 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    background-image: url("mojahid-mottakin-0cNpKOPQKgo-unsplash.jpg");
+} */
+
+.header{
+    padding-left: 60px;
+    padding-right: 60px;
+    color: white;
+    background: #054438;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.nav-bar{
+    background: teal;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+    padding: 20px;
+    color:#fff2f2;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.logo{
+    margin: auto;
+}
+.logo .samp{
+   color: black;
+   font-family: monospace;
+}
+
+.samp2{
+    color: white;
+}
+
+
+
+.menue ul{
+    gap: 40px;
+    display: flex;
+}
+
+.menue ul li:hover{
+    color: #054438;
+    cursor: pointer;
+
+}
+
+.togelle{
+    background:transparent;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 60px;
+    /* display: none; */
+    display: none;
+
+}
+
+.togelle .chile{
+    background: white;
+    white: 10px ;
+    height: 3px;
+    margin-top: 5px;
+
+}
+
+
+.navigation{
+   background:teal;
+    width: 60%;
+    position: fixed;
+    height: 100vh;
+    border-top: 20px solid white;
+    transition: 2s;
+    right: -1000px;
+    z-index:-1;
+    /* transform: translateY(180px); */
+}
+
+.navigation .tric{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navigation ul li{
+    margin-top: 50px;
+    padding-top: 50px;
+
+}
+
+.navigation ul li:hover{
+    color: #054438;
+
+}
+
+.navigation.active{
+ right: 0;
+}
+
+
+.header.active{
+    background: teal;
+    transition: .4s ease-in;
+}
+
+.nav-bar.active{
+    background:#054438;
+    transition: .4s ease-out;
+}
+
+.togelle.open #bar1{
+    transform: rotate(45deg) translate(6px,5px);
+}
+
+.togelle.open #bar2{
+    background: transparent;
+ }
+ 
+
+.togelle.open #bar3{
+    transform: rotate(-45deg) translate(6px,-5px);
+}
+
+@media all and (max-width: 991px){
+    .togelle{
+        display: block;
+    }
+
+    .menue{
+        display: none;
+    } 
+
+   
+    
+}
+
+.colorr{
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+}
+.roge{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.navigation.rouge{
+    background: red;
+}
+
+.navigation.bleuwrry{
+    background: blue;
+}
+
+.bleu.bleuwrry{
+    background: #000;
+}
+.bleu{
+    background: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.jaune{
+    background: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.vert{
+    background: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
